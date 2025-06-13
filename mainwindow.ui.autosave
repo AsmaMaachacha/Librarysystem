@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library Management System</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QListWidget" name="listWidget">
+      <item>
+       <property name="text">
+        <string>Resources</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Users</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Loans</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <widget class="QWidget" name="pageResources">
+       <layout class="QVBoxLayout" name="verticalLayoutResources">
+        <item>
+         <layout class="QHBoxLayout" name="buttonsLayout">
+          <item>
+           <widget class="QPushButton" name="btnAddBook">
+            <property name="text">
+             <string>Add Book</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddArticle">
+            <property name="text">
+             <string>Add Article</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddThesis">
+            <property name="text">
+             <string>Add Thesis</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnAddMedia">
+            <property name="text">
+             <string>Add Media</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableResources"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageUsers">
+       <layout class="QVBoxLayout" name="verticalLayoutUsers">
+        <item>
+         <widget class="QPushButton" name="btnAddUser">
+          <property name="text">
+           <string>Add User</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableUsers"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageLoans">
+       <layout class="QVBoxLayout" name="verticalLayoutLoans">
+        <item>
+         <layout class="QHBoxLayout" name="loanButtons">
+          <item>
+           <widget class="QPushButton" name="btnBorrow">
+            <property name="text">
+             <string>Borrow</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnReturn">
+            <property name="text">
+             <string>Return</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableLoans"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
